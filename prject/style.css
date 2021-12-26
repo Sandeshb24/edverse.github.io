@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif
+}
+.header{
+      min-height: 100vh;
+      width:100%;
+      background-image: url(homebg.jpg),linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+      background-position: center;
+      background-size: cover;
+      position: relative;
+}
+
+nav{
+    display:flex;
+    padding:2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+nav img{
+    width: 150px;
+}
+
+.nav-links {
+    flex:1;
+    text-align:right;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding:8px 12px;
+    position: relative;
+
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration:none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content:'' ;
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display:block;
+    margin:auto;
+    transition: 0.2s;
+
+}
+
+.nav-links ul li:hover::after{
+    width:100%;
+    
+
+}
+
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+
+}
+.text-box h1{
+    font-size: 62px;
+
+}
+
+.text-box p{
+    margin:10px 0 40px;
+    font-size:14px;
+    color:#fff;
+}
+
+.hero-btn{
+    display:inline-block;
+    text-decoration: none;
+    color:#fff;
+    border: 0.5px solid #fff;
+    background:transparent ;
+    position:relative;
+    cursor:pointer;
+
+
+}
+
+
+.hero-btn:hover{
+    border: 1px solid white ;
+    background: #f44336;
+    transition: 0.5s;
+
+    
+
+}
+
+/*course glance*/
+
+.course{
+    width:auto;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+}
+
+h1{ 
+    font-size: 36px;
+    font-weight:600;
+
+}
+
+
+
+p{
+    color:black;
+    font-size:16px;
+    font-weight: 300;
+    line-height:22px;
+    padding: 10px;
+
+}
+
+.row{
+    margin-top: 5%;
+    display:  flex;
+    justify-content: space-between;
+
+}
+
+.course-col{
+    flex-basis: 31%;
+    background:#c7c7c7;
+    border-radius:10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.55s;
+
+}
+
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin:10px 0;
+}
+
+
+.course-col:hover{
+    box-sizing: 0 0 20px 0px black;
+
+
+}
+
+
+/*------------overview-------------*/
+
+
+.overview{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top:50px;
+
+}
+.overview-col{
+    flex-basis:32%;
+    border-radius:10px;
+    margin-bottom:30px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.overview-col img{
+    width: 100%;
+    display: block;
+}
+
+.layer{
+    background:transparent;
+    height: 100%;
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    transition:0.25s;
+
+}
+
+.layer:hover{
+    background:rgba(192, 192, 192, 0.7);
+}
+
+
+.layer h3{
+    width:100%;font-weight: 500;
+    color:black;
+    font-size: 26px;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition:0.3s;
+
+
+}
+
+.layer:hover h3{
+    bottom:49%;
+    opacity:1;
+
+
+}
+
+
+/*-----------------------------benifits-------------------------*/
+
+
+.benifits{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:100px;
+
+}
+
+.ben-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align:left;
+
+}
+
+.ben-col img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+ben-col p{
+    padding: 0;
+
+}
+
+.ben-col h3{
+    margin-top: 16px;
+    text-align: left;
+
+}
+
+
+/*-----------------sign up page--------------------------*/
+.sign-up-form{
+    width:300px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+    background: rgba(107, 107, 107, 0.7);
+    padding: 20px;
+    margin: 8% auto 0;
+    text-align: center;
+
+}
+
+.sign-up-form h1{
+    color: black;
+    margin-bottom: 30px ;
+}
+
+
+.input-box{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width:90%;
+    border: 1px solid rgb(58, 58, 58);
+    outline: none;
+
+}
+
+button{
+    color:brgb(65, 65, 65);
+    width:100%;
+    padding: 10px;
+    border-radius:20px;
+    font-size:15px;
+    margin: 10px 0;
+    border:none;
+    outline: none;
+    cursor: pointer;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+/*------------signup page------------*/
+.headersignup{
+    min-height: 100vh;
+    width:100%;
+    background-image: url(signupbg.jpg),linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
